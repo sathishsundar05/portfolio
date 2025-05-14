@@ -24,11 +24,16 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Create zip from output
+      - name: Export static files
+        run: npx next export
+
+      - name: Create and inspect zip
         run: |
           cd out
+          ls -la
           zip -r ../out.zip .
           cd ..
+          unzip -l out.zip
 
       - name: Upload out.zip via SCP
         uses: appleboy/scp-action@v0.1.7
@@ -50,4 +55,5 @@ jobs:
           command: |
             cd /home/ordra/public_html/portfolio
             unzip -o out.zip -d .
+            ls -la
             rm out.zip
