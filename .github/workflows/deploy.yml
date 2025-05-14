@@ -21,15 +21,15 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm ci
+        run: npm i
         
       - name: Build project
         run: npm run build
         
       - name: Create zip file
         run: |
-          cd dist
-          zip -r ../dist.zip .
+          cd out
+          zip -r ../out.zip .
           cd ..
           
       - name: Deploy to cPanel
@@ -41,7 +41,7 @@ jobs:
           local-dir: ./
           server-dir: ${{ secrets.CPANEL_PATH }}/
           include: |
-            dist.zip
+            out.zip
             
       - name: Extract zip file on cPanel
         uses: garygrossgarten/github-action-ssh@release
@@ -51,5 +51,5 @@ jobs:
           password: ${{ secrets.CPANEL_PASSWORD }}
           command: |
             cd ${{ secrets.CPANEL_PATH }}
-            unzip -o dist.zip -d ${{ secrets.EXTRACT_PATH }}
-            rm dist.zip
+            unzip -o out.zip -d ${{ secrets.EXTRACT_PATH }}
+            rm out.zip
