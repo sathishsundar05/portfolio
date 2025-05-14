@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -21,21 +21,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build project (creates out/)
         run: npm run build
 
-      - name: Export static files
-        run: npx next export
-
-      - name: Create and inspect zip
+      - name: Zip the out folder
         run: |
           cd out
-          ls -la
           zip -r ../out.zip .
           cd ..
+          ls -lh out.zip
           unzip -l out.zip
 
-      - name: Upload out.zip via SCP
+      - name: Upload to cPanel via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.CPANEL_SERVER }}
