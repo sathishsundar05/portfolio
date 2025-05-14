@@ -40,8 +40,9 @@ jobs:
           password: ${{ secrets.CPANEL_PASSWORD }}
           local-dir: ./
           server-dir: ${{ secrets.CPANEL_PATH }}/
-          include: |
-            out.zip
+          exclude: | 
+            * 
+            !out.zip
             
       - name: Extract zip file on cPanel
         uses: garygrossgarten/github-action-ssh@release
