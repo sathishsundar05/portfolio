@@ -8,7 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Markdown from "react-markdown";
 import { cn } from "@/lib/utils";
-import { Feedback } from '../components/feedback';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -78,7 +77,6 @@ export default function Page() {
                 title={work.company}
                 subtitle={work.title}
                 href={work.href}
-                badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
@@ -155,9 +153,6 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
                 />
               </BlurFade>
             ))}

@@ -1,0 +1,6 @@
+{
+  "firebase_hosting": {
+    "deploymentHostingUrl": "https://satzzportfolio.web.app"
+  },
+  "cloud_run_deploy": {}
+}

@@ -1,0 +1,300 @@
+[debug] [2024-12-04T21:20:41.925Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T21:20:41.928Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/wg0myk7djggj0f2327nkpm9r2w8q6lp8-firebase-tools-13.27.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2024-12-04T21:20:41.929Z] CLI Version:   13.27.0
+[debug] [2024-12-04T21:20:41.929Z] Platform:      linux
+[debug] [2024-12-04T21:20:41.929Z] Node Version:  v20.17.0
+[debug] [2024-12-04T21:20:41.929Z] Time:          Wed Dec 04 2024 21:20:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-12-04T21:20:41.929Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T21:20:42.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:20:42.040Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:20:42.040Z] [iam] checking project satzzportfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-04T21:20:42.042Z] No OAuth tokens found
+[debug] [2024-12-04T21:20:42.042Z] No OAuth tokens found
+[debug] [2024-12-04T21:20:42.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:20:42.042Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:20:42.044Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions [none]
+[debug] [2024-12-04T21:20:42.044Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions x-goog-quota-user=projects/satzzportfolio
+[debug] [2024-12-04T21:20:42.044Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:20:42.951Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions 200
+[debug] [2024-12-04T21:20:42.951Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:20:42.953Z] No OAuth tokens found
+[debug] [2024-12-04T21:20:42.953Z] No OAuth tokens found
+[debug] [2024-12-04T21:20:42.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:20:42.953Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:20:42.954Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio [none]
+[debug] [2024-12-04T21:20:43.224Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio 200
+[debug] [2024-12-04T21:20:43.224Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio {"projectId":"satzzportfolio","projectNumber":"586929259488","displayName":"satzzportfolio","name":"projects/satzzportfolio","resources":{"hostingSite":"satzzportfolio"},"state":"ACTIVE","etag":"1_d330c668-2bba-49da-9a6c-23ae770e0485"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-04T21:21:09.077Z] No OAuth tokens found
+[debug] [2024-12-04T21:21:09.077Z] No OAuth tokens found
+[debug] [2024-12-04T21:21:09.078Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:21:09.078Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:21:09.078Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio [none]
+[debug] [2024-12-04T21:21:09.527Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio 200
+[debug] [2024-12-04T21:21:09.527Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio {"name":"projects/satzzportfolio/sites/satzzportfolio","defaultUrl":"https://satzzportfolio.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/page.tsx:81:30
+Type error: Property 'badges' does not exist on type '{ readonly company: "Intellect Design Arena Ltd"; readonly href: "https://www.intellectdesign.com/"; readonly location: "Chennai, Tamil Nadu"; readonly title: "Consultant"; readonly logoUrl: "/intellect.png"; readonly start: "Apr 2020"; readonly end: "Present"; readonly description: "Led architectural transition to ...'.
+  Property 'badges' does not exist on type '{ readonly company: "Intellect Design Arena Ltd"; readonly href: "https://www.intellectdesign.com/"; readonly location: "Chennai, Tamil Nadu"; readonly title: "Consultant"; readonly logoUrl: "/intellect.png"; readonly start: "Apr 2020"; readonly end: "Present"; readonly description: "Led architectural transition to ...'.
+
+  79 |                 subtitle={work.title}
+  80 |                 href={work.href}
+> 81 |                 badges={work.badges}
+     |                              ^
+  82 |                 period={`${work.start} - ${work.end ?? "Present"}`}
+  83 |                 description={work.description}
+  84 |               />
+
+[debug] [2024-12-04T21:22:08.598Z] Error: ENOENT: no such file or directory, open '/home/user/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-04T21:23:37.745Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T21:23:37.748Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/wg0myk7djggj0f2327nkpm9r2w8q6lp8-firebase-tools-13.27.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2024-12-04T21:23:37.749Z] CLI Version:   13.27.0
+[debug] [2024-12-04T21:23:37.749Z] Platform:      linux
+[debug] [2024-12-04T21:23:37.749Z] Node Version:  v20.17.0
+[debug] [2024-12-04T21:23:37.749Z] Time:          Wed Dec 04 2024 21:23:37 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-12-04T21:23:37.749Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T21:23:37.862Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:23:37.862Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:23:37.862Z] [iam] checking project satzzportfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-04T21:23:37.864Z] No OAuth tokens found
+[debug] [2024-12-04T21:23:37.864Z] No OAuth tokens found
+[debug] [2024-12-04T21:23:37.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:23:37.865Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:23:37.866Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions [none]
+[debug] [2024-12-04T21:23:37.866Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions x-goog-quota-user=projects/satzzportfolio
+[debug] [2024-12-04T21:23:37.867Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:23:38.772Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions 200
+[debug] [2024-12-04T21:23:38.772Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:23:38.773Z] No OAuth tokens found
+[debug] [2024-12-04T21:23:38.774Z] No OAuth tokens found
+[debug] [2024-12-04T21:23:38.774Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:23:38.774Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:23:38.774Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio [none]
+[debug] [2024-12-04T21:23:39.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio 200
+[debug] [2024-12-04T21:23:39.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio {"projectId":"satzzportfolio","projectNumber":"586929259488","displayName":"satzzportfolio","name":"projects/satzzportfolio","resources":{"hostingSite":"satzzportfolio"},"state":"ACTIVE","etag":"1_d330c668-2bba-49da-9a6c-23ae770e0485"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-04T21:24:05.661Z] No OAuth tokens found
+[debug] [2024-12-04T21:24:05.661Z] No OAuth tokens found
+[debug] [2024-12-04T21:24:05.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:24:05.662Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:24:05.662Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio [none]
+[debug] [2024-12-04T21:24:05.963Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio 200
+[debug] [2024-12-04T21:24:05.963Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio {"name":"projects/satzzportfolio/sites/satzzportfolio","defaultUrl":"https://satzzportfolio.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+./src/app/page.tsx:157:34
+Type error: Property 'image' does not exist on type '{ readonly title: "IDX 3.0 Micro Frontend Architecture"; readonly href: "#"; readonly dates: "2020 - Present"; readonly active: true; readonly description: "Transformed monolithic Vue.js application into modular micro-frontend architecture using single-spa, enabling independent deployment and framework flexibility."...'.
+  Property 'image' does not exist on type '{ readonly title: "IDX 3.0 Micro Frontend Architecture"; readonly href: "#"; readonly dates: "2020 - Present"; readonly active: true; readonly description: "Transformed monolithic Vue.js application into modular micro-frontend architecture using single-spa, enabling independent deployment and framework flexibility."...'.
+
+  155 |                   dates={project.dates}
+  156 |                   tags={project.technologies}
+> 157 |                   image={project.image}
+      |                                  ^
+  158 |                   video={project.video}
+  159 |                   links={project.links}
+  160 |                 />
+
+[debug] [2024-12-04T21:24:42.565Z] Error: ENOENT: no such file or directory, open '/home/user/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-04T21:25:35.329Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T21:25:35.335Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/wg0myk7djggj0f2327nkpm9r2w8q6lp8-firebase-tools-13.27.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2024-12-04T21:25:35.336Z] CLI Version:   13.27.0
+[debug] [2024-12-04T21:25:35.336Z] Platform:      linux
+[debug] [2024-12-04T21:25:35.336Z] Node Version:  v20.17.0
+[debug] [2024-12-04T21:25:35.336Z] Time:          Wed Dec 04 2024 21:25:35 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-12-04T21:25:35.337Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T21:25:35.671Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:25:35.671Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:25:35.672Z] [iam] checking project satzzportfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-04T21:25:35.674Z] No OAuth tokens found
+[debug] [2024-12-04T21:25:35.675Z] No OAuth tokens found
+[debug] [2024-12-04T21:25:35.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:25:35.675Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:25:35.677Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions [none]
+[debug] [2024-12-04T21:25:35.677Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions x-goog-quota-user=projects/satzzportfolio
+[debug] [2024-12-04T21:25:35.677Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:25:36.583Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions 200
+[debug] [2024-12-04T21:25:36.584Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:25:36.585Z] No OAuth tokens found
+[debug] [2024-12-04T21:25:36.586Z] No OAuth tokens found
+[debug] [2024-12-04T21:25:36.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:25:36.586Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:25:36.586Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio [none]
+[debug] [2024-12-04T21:25:36.845Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio 200
+[debug] [2024-12-04T21:25:36.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio {"projectId":"satzzportfolio","projectNumber":"586929259488","displayName":"satzzportfolio","name":"projects/satzzportfolio","resources":{"hostingSite":"satzzportfolio"},"state":"ACTIVE","etag":"1_d330c668-2bba-49da-9a6c-23ae770e0485"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-04T21:26:03.877Z] No OAuth tokens found
+[debug] [2024-12-04T21:26:03.878Z] No OAuth tokens found
+[debug] [2024-12-04T21:26:03.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:26:03.879Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:26:03.879Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio [none]
+[debug] [2024-12-04T21:26:04.244Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio 200
+[debug] [2024-12-04T21:26:04.244Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio {"name":"projects/satzzportfolio/sites/satzzportfolio","defaultUrl":"https://satzzportfolio.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./src/components/magicui/blur-fade.tsx:32:53
+Type error: Type 'string' is not assignable to type 'MarginType | undefined'.
+
+  30 | }: BlurFadeProps) => {
+  31 |   const ref = useRef(null);
+> 32 |   const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+     |                                                     ^
+  33 |   const isInView = !inView || inViewResult;
+  34 |   const defaultVariants: Variants = {
+  35 |     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
+
+[debug] [2024-12-04T21:26:39.517Z] Error: ENOENT: no such file or directory, open '/home/user/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-04T21:32:23.113Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T21:32:23.115Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/wg0myk7djggj0f2327nkpm9r2w8q6lp8-firebase-tools-13.27.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2024-12-04T21:32:23.116Z] CLI Version:   13.27.0
+[debug] [2024-12-04T21:32:23.116Z] Platform:      linux
+[debug] [2024-12-04T21:32:23.116Z] Node Version:  v20.17.0
+[debug] [2024-12-04T21:32:23.116Z] Time:          Wed Dec 04 2024 21:32:23 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-12-04T21:32:23.117Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T21:32:23.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:32:23.223Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:32:23.224Z] [iam] checking project satzzportfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-04T21:32:23.225Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:23.226Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:23.226Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:32:23.226Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:32:23.227Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions [none]
+[debug] [2024-12-04T21:32:23.228Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions x-goog-quota-user=projects/satzzportfolio
+[debug] [2024-12-04T21:32:23.228Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:32:24.104Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions 200
+[debug] [2024-12-04T21:32:24.105Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satzzportfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-04T21:32:24.107Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:24.107Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:24.107Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:32:24.107Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:32:24.108Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio [none]
+[debug] [2024-12-04T21:32:24.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio 200
+[debug] [2024-12-04T21:32:24.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/satzzportfolio {"projectId":"satzzportfolio","projectNumber":"586929259488","displayName":"satzzportfolio","name":"projects/satzzportfolio","resources":{"hostingSite":"satzzportfolio"},"state":"ACTIVE","etag":"1_d330c668-2bba-49da-9a6c-23ae770e0485"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-04T21:32:49.620Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:49.621Z] No OAuth tokens found
+[debug] [2024-12-04T21:32:49.621Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T21:32:49.622Z] > authorizing via signed-in user (sundarsathish05@gmail.com)
+[debug] [2024-12-04T21:32:49.622Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio [none]
+[debug] [2024-12-04T21:32:49.920Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio 200
+[debug] [2024-12-04T21:32:49.920Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/satzzportfolio/sites/satzzportfolio {"name":"projects/satzzportfolio/sites/satzzportfolio","defaultUrl":"https://satzzportfolio.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+
+[info]    Linting ...
+
+[info]    Collecting page data ...
+
+[info] Error: ENOENT: no such file or directory, scandir '/home/user/portfolio/content'
+    at Object.readdirSync (node:fs:1507:26)
+    at x (/home/user/portfolio/.next/server/app/blog/[slug]/page.js:1:9042)
+    at b (/home/user/portfolio/.next/server/app/blog/[slug]/page.js:1:9261)
+    at Object.d [as generateStaticParams] (/home/user/portfolio/.next/server/app/blog/[slug]/page.js:1:6947)
+    at buildParams (/home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/utils.js:1026:58)
+    at buildParams (/home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/utils.js:1020:28)
+    at /home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/utils.js:1043:39
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (/home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/async-storage/static-generation-async-storage-wrapper.js:49:24)
+    at buildAppStaticPaths (/home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/utils.js:981:85) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/home/user/portfolio/content'
+}
+
+[info] 
+> Build error occurred
+
+[info] Error: Failed to collect page data for /blog/[slug]
+    at /home/user/portfolio/node_modules/.pnpm/next@14.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/utils.js:1268:15 {
+  type: 'Error'
+}
+
+[debug] [2024-12-04T21:33:12.653Z] Error: ENOENT: no such file or directory, open '/home/user/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
